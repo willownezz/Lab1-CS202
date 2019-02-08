@@ -7,7 +7,7 @@ COMPILER:          GNU g++ compiler on Linux
 MODIFICATION HISTORY:
 Author               Date            Version             Description
 ---------------      ----------      ------------        ------------
-Luiz Diego Garcia    02/07/19        0.0.1               Created File 
+Luiz Diego Garcia    02/07/19        0.0.1               Created File. 
 ----------------------------------------------------------------------------- */
 //Libraries
 #include<iostream>

@@ -8,7 +8,7 @@ MODIFICATION HISTORY:
 Author               Date            Version             Description
 ---------------      ----------      ------------        ------------
 Luiz Diego Garcia    02/07/19        0.0.1               Created File
-Luiz Diego Garcia    02/07/19        0.0.2               Added My_Name[] 
+Luiz Diego Garcia    02/07/19        0.0.2               Added My_Name[]. 
 ----------------------------------------------------------------------------- */
 //Libraries
 #include<iostream>

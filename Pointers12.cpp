@@ -7,10 +7,12 @@ COMPILER:          GNU g++ compiler on Linux
 MODIFICATION HISTORY:
 Author               Date            Version             Description
 ---------------      ----------      ------------        ------------
-Luiz Diego Garcia    02/07/19        0.0.1               Created File 
+Luiz Diego Garcia    02/07/19        0.0.1               Created File
+Luiz Diego Garcia    02/07/19        0.0.2               Added My_Name[] 
 ----------------------------------------------------------------------------- */
 //Libraries
 #include<iostream>
+#include<cstring>
 
 using  namespace std;
 
@@ -26,8 +28,11 @@ int main()
 {
 	int x = 25;		//int variable
 	int *ptr = nullptr;	//Pointer variable, can point to an int
+	char My_Name[] = "Luiz Diego Garcia";
+	char *charPtr = nullptr;
 
 	ptr = &x;		//Store the address of x in ptr
+    charPtr = My_Name;
 
 	cout << endl << endl;
 	cout << "The hex address of x is: " << ptr << endl;
@@ -37,8 +42,18 @@ int main()
 	cout << endl;
 
 	cout << "The size of x is " << sizeof(x) << " bytes\n";
-	cout << "The value in x is " << x << endl;
-	cout << endl << endl;
+    cout << "The value in x is " << x << endl;
+    cout << endl << endl;
+
+    cout << "My name is: " << My_Name << endl;
+    cout << "The size of My_Name is: " << sizeof(charPtr) << endl;
+    cout << "The lenght of My_Name is: " << strlen(My_Name) << endl;
+
+    for(int i = 0; i <= sizeof(My_Name); i++)
+        {
+            cout << " " << i << " " << endl;
+            cout << My_Name[i] << endl;
+        }
 
 	//Programmer signature and time stamp.
 	cout << endl;

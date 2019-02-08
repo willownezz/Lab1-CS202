@@ -49,10 +49,9 @@ int main()
     cout << "The size of My_Name is: " << sizeof(charPtr) << endl;
     cout << "The lenght of My_Name is: " << strlen(My_Name) << endl;
 
-    for(int i = 0; i <= sizeof(My_Name); i++)
+    for(int i = 0; i <= strlen(My_Name); i++)
         {
-            cout << " " << i << " " << endl;
-            cout << My_Name[i] << endl;
+            cout << My_Name[i] << " # ";
         }
 
 	//Programmer signature and time stamp.

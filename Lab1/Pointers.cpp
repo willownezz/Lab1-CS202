@@ -7,16 +7,12 @@ COMPILER:          GNU g++ compiler on Linux
 MODIFICATION HISTORY:
 Author               Date            Version             Description
 ---------------      ----------      ------------        ------------
-Luiz Diego Garcia    02/07/19        0.0.1               Created File
-Luiz Diego Garcia    02/07/19        0.0.2               Added My_Name[] 
-Luiz Diego Garcia    02/12/19        0.0.3               loop stepping trrough index, char, address and dec value 
+Luiz Diego Garcia    02/07/19        0.0.1               Created File. 
+Luiz Diego Garcia    02/08/19        0.0.2               Added Hex and Dec values of variable 'x'
+Luiz Diego Garcia    02/08/19        0.0.3               Added sizeof and created pointer  
 ----------------------------------------------------------------------------- */
 //Libraries
 #include<iostream>
-#include<cstring>
-#include<string>
-#include<iomanip>
-#include<cctype>
 
 using  namespace std;
 
@@ -32,11 +28,8 @@ int main()
 {
 	int x = 25;		//int variable
 	int *ptr = nullptr;	//Pointer variable, can point to an int
-	char My_Name[] = "Luiz Diego Garcia";
-	char *charPtr = nullptr;
 
 	ptr = &x;		//Store the address of x in ptr
-    charPtr = My_Name;
 
 	cout << endl << endl;
 	cout << "The hex address of x is: " << ptr << endl;
@@ -45,20 +38,9 @@ int main()
 
 	cout << endl;
 
-	cout << "The  size of x is " << sizeof(x) << " bytes\n";
-    cout << "The value in x is " << x << endl;
-    cout << endl;
-
-    cout << "My name is " << My_Name << endl;
-    cout << "The   size of My_Name is: " << sizeof(charPtr) << " bytes" << endl;
-    cout << "The lenght of My_Name is: " << strlen(My_Name) << " bytes" << endl;
-    cout << endl;
-
-    for(int i = 0; i <= strlen(My_Name); i++)
-        {
-            cout << "Char " << i << " is " << My_Name[i] << " at address: "<< (long long) &My_Name[i];
-            cout << " with a value of: " << (long long) My_Name[i] << endl;
-        }
+	cout << "The size of x is " << sizeof(x) << " bytes\n";
+	cout << "The value in x is " << x << endl;
+	cout << endl << endl;
 
 	//Programmer signature and time stamp.
 	cout << endl;
